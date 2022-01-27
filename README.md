@@ -1,4 +1,4 @@
-# SwiftUI13Sample
+# SwiftUIProjectSampleforiOS13
 UIKitプロジェクトにSwiftUIを導入する際の検証用プロジェクト
 
 # 要件

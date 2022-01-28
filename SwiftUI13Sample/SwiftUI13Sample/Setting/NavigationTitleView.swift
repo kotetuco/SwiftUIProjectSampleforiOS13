@@ -11,7 +11,7 @@ struct NavigationTitleView: View {
     var body: some View {
         VStack {
             Text("Title")
-                .fontWeight(.bold)
+                .fontWeight(.semibold)
             Text("Sub title")
                 .fontWeight(.thin)
         }

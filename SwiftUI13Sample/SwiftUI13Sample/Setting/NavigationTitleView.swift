@@ -10,7 +10,7 @@ import SwiftUI
 struct NavigationTitleView: View {
     var body: some View {
         VStack {
-            Text("Main title")
+            Text("Title")
                 .fontWeight(.bold)
             Text("Sub title")
                 .fontWeight(.thin)

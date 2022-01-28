@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A256F7727A3D67A008FC797 /* NavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A256F7627A3D67A008FC797 /* NavigationTitleView.swift */; };
 		9CBE58F927A3654E0060C150 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE58F827A3654E0060C150 /* AppDelegate.swift */; };
 		9CBE58FB27A3654E0060C150 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE58FA27A3654E0060C150 /* SceneDelegate.swift */; };
 		9CBE58FD27A3654E0060C150 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE58FC27A3654E0060C150 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A256F7627A3D67A008FC797 /* NavigationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleView.swift; sourceTree = "<group>"; };
 		9CBE58F527A3654E0060C150 /* SwiftUI13Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI13Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBE58F827A3654E0060C150 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CBE58FA27A3654E0060C150 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				9CBE590F27A36AC50060C150 /* SettingRouter.swift */,
 				9CBE590D27A369E30060C150 /* SettingView.swift */,
+				4A256F7627A3D67A008FC797 /* NavigationTitleView.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				9CBE58FD27A3654E0060C150 /* ViewController.swift in Sources */,
 				9CBE591027A36AC50060C150 /* SettingRouter.swift in Sources */,
 				9CBE590E27A369E30060C150 /* SettingView.swift in Sources */,
+				4A256F7727A3D67A008FC797 /* NavigationTitleView.swift in Sources */,
 				9CBE58F927A3654E0060C150 /* AppDelegate.swift in Sources */,
 				9CBE58FB27A3654E0060C150 /* SceneDelegate.swift in Sources */,
 			);
@@ -303,7 +307,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TXFV3DH636;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -318,8 +323,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.kotetu.example.swiftui.ios13.SwiftUI13Sample;
+				PRODUCT_BUNDLE_IDENTIFIER = co.kotetu.app.sample.swiftui.ios13.SwiftUI13Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "General Sample App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,7 +337,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TXFV3DH636;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -346,8 +353,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.kotetu.example.swiftui.ios13.SwiftUI13Sample;
+				PRODUCT_BUNDLE_IDENTIFIER = co.kotetu.app.sample.swiftui.ios13.SwiftUI13Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "General Sample App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

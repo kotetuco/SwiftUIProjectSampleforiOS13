@@ -2,7 +2,7 @@
 //  NavigationTitleView.swift
 //  SwiftUI13Sample
 //
-//  Created by Toru Kuriyama on 2022/01/28.
+//  Created by kotetu on 2022/01/28.
 //
 
 import SwiftUI

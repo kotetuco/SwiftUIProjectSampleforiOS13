@@ -8,26 +8,31 @@
 import SwiftUI
 
 struct SettingView: View {
+    @ObservedObject private var viewModel: SettingViewModel
+
+    init(viewModel: SettingViewModel) {
+        self.viewModel = viewModel
+    }
+
     var body: some View {
         VStack {
             List {
-                Section {
-                    ColumnView("設定1")
-                    ColumnView("設定2")
-                } header: {
-                    Text("カテゴリー1")
-                }
-                Section {
-                    ColumnView("設定3")
-                    ColumnView("設定4")
-                } header: {
-                    Text("カテゴリー2")
+                ForEach($viewModel.settingGroups) { settingGroup in
+                    Section {
+                        ForEach(settingGroup.settings) { setting in
+                            ColumnView(label: setting.title.wrappedValue,
+                                       isOn: setting.isOn)
+                        }
+                    } header: {
+                        Text(settingGroup.sectionTitle.wrappedValue)
+                    }
                 }
             }
             .listStyle(.grouped)
         }
         .onAppear(perform: {
             print("onAppear")
+
         })
         .onDisappear {
             print("onDisappear")
@@ -37,6 +42,14 @@ struct SettingView: View {
 
 struct SettingView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingView()
+        SettingView(viewModel: viewModel)
+            .preferredColorScheme(.dark)
+        SettingView(viewModel: viewModel)
+            .preferredColorScheme(.light)
+    }
+
+    private static var viewModel: SettingViewModel {
+        SettingViewModel(interactor: SettingInteractor(),
+                         settingListBuilder: SettingListBuilder())
     }
 }

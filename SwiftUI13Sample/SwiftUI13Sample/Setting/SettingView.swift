@@ -20,7 +20,8 @@ struct SettingView: View {
                 ForEach($viewModel.settingGroups) { settingGroup in
                     Section {
                         ForEach(settingGroup.settings) { setting in
-                            ColumnView(label: setting.title.wrappedValue,
+                            ColumnView(title: setting.title.wrappedValue,
+                                       description: setting.description.wrappedValue,
                                        isOn: setting.isOn)
                         }
                     } header: {

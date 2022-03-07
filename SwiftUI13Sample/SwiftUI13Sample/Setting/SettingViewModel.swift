@@ -9,11 +9,20 @@ import Foundation
 
 final class SettingViewModel: ObservableObject {
     private let interactor: SettingInteractorInterface
+    private let builder: SettingListBuilderInterface
 
     @Published var settingGroups: [SettingGroup]
 
-    init(interactor: SettingInteractorInterface, settingListBuilder: SettingListBuilderInterface) {
+    init(interactor: SettingInteractorInterface, builder: SettingListBuilderInterface) {
         self.interactor = interactor
-        self.settingGroups = settingListBuilder.build()
+        self.builder = builder
+        self.settingGroups = []
+    }
+
+    func onAppear() {
+        settingGroups = builder.build()
+    }
+
+    func onDisappear() {
     }
 }

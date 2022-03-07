@@ -13,7 +13,7 @@ final class SettingRouter {
 
     init() {
         let viewModel = SettingViewModel(interactor: SettingInteractor(),
-                                         settingListBuilder: SettingListBuilder())
+                                         builder: SettingListBuilder())
         viewController = UIHostingController(rootView: SettingView(viewModel: viewModel))
         let titleView = UIHostingController(rootView: NavigationTitleView()).view
         titleView?.backgroundColor = .clear

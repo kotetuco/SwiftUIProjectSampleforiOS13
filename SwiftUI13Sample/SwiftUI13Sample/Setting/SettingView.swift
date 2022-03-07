@@ -33,10 +33,11 @@ struct SettingView: View {
         }
         .onAppear(perform: {
             print("onAppear")
-
+            viewModel.onAppear()
         })
         .onDisappear {
             print("onDisappear")
+            viewModel.onDisappear()
         }
     }
 }
@@ -51,6 +52,6 @@ struct SettingView_Previews: PreviewProvider {
 
     private static var viewModel: SettingViewModel {
         SettingViewModel(interactor: SettingInteractor(),
-                         settingListBuilder: SettingListBuilder())
+                         builder: SettingListBuilder())
     }
 }

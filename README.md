@@ -21,7 +21,7 @@ UIKitプロジェクトにSwiftUIを導入する際の検証用プロジェク�
       - ColumnView(リストビュー部分)
 
 
-<img src="https://user-images.githubusercontent.com/2371902/152097358-f6742def-1021-42e6-a3b2-334935203966.png" width="320" />
+<img src="https://user-images.githubusercontent.com/2371902/157275048-57c5d5cb-735e-4835-ad1c-7baca3fcfb27.png" width="320" />
 
 ## TODO
 
